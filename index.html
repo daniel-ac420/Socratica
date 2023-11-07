@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Сократика</title>
+	
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+	
+	<!--- CSS --->
+	<link href="css/reset.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+</head>
+<body>	
+	<header class="header">
+		<div class="wrapper">
+			<div class="header__top">
+				<a class="logo" href="#">
+					<img class="logo__image" src="images/header/logo.svg" alt="Logo" title="Сократика">
+				</a>
+			</div>
+		</div>
+	</header>
+
+	
+	<main class="main">
+		<div class="wrapper">
+			<section class="section section-presentation">
+				<div class="decoration__image">
+				</div>
+				
+				<form class="form">
+					<h1 class="title title--main" title="Заполни форму">
+						01 Заполни форму
+					</h1>
+					
+					<div class="fieldset__group">
+						<fieldset class="form__fieldset form__fieldset--theme">
+							<legend class="form__legend" title="Тема урока">Тема урока</legend>
+							<input class="form__input" type="search" name="theme" placeholder="Напиши что-то конкретное" title="Напиши что-то конкретное">
+						</fieldset>
+
+						<fieldset class="form__fieldset form__fieldset--year">
+							<legend class="form__legend" title="Класс">
+								Класс
+							</legend>
+							<div class="select" data-state="">
+								<div class="select__title" data-default="Option 0">1</div>
+								<div class="select__content">
+									<input id="Select0" class="select__input" type="radio" name="Select" checked>
+									<label for="Select0" class="select__label">1</label>
+
+									<input id="Select0" class="select__input" type="radio" name="Select" checked>
+									<label for="Select0" class="select__label select__label--current" title="1">1</label>
+
+									<input id="Select1" class="select__input" type="radio" name="Select">
+									<label for="Select1" class="select__label" title="2">2</label>
+
+									<input id="Select2" class="select__input" type="radio" name="Select">
+									<label for="Select2" class="select__label" title="3">3</label>
+
+									<input id="Select3" class="select__input" type="radio" name="Select">
+									<label for="Select3" class="select__label" title="4">4</label>
+
+									<input id="Select4" class="select__input" type="radio" name="Select">
+									<label for="Select4" class="select__label" title="5">5</label>
+								</div>
+							</div>
+						</fieldset>
+					</div>
+					
+					<ul class="themes-list">
+						<li class="themes-list__item default">
+							Генетика
+						</li>
+						<li class="themes-list__item default">
+							Анатомия человека
+						</li>
+						<li class="themes-list__item default">
+							Вулканы
+						</li>
+						<li class="themes-list__item default">
+							Зимние виды спорта
+						</li>
+						<li class="themes-list__item default">
+							Индийская культура
+						</li>
+						<li class="themes-list__item default">
+							Радуга
+						</li>
+						<li class="themes-list__item visually-hidden">
+							Пеший туризм
+						</li>
+						<li class="themes-list__item visually-hidden">
+							Философия
+						</li>
+						<li class="themes-list__item visually-hidden">
+							Вселенная
+						</li>
+						<li class="themes-list__item visually-hidden">
+							Здоровые привычки
+						</li>
+						<li class="themes-list__item visually-hidden">
+							Бабочки
+						</li>
+						<li class="themes-list__item visually-hidden">
+							Белые медведи
+						</li>
+						<li class="themes-list__item visually-hidden">
+							Экономика
+						</li>
+						<li class="themes-list__item visually-hidden">
+							Финансовая грамотность
+						</li>
+						<li class="themes-list__item visually-hidden">
+							Фотосинтез
+						</li>
+					</ul>
+					
+					<button id="more-options" type="button">
+						Показать больше вариантов
+					</button>
+					
+					<fieldset class="form__fieldset">
+						<legend class="form__legend">Цель урока</legend>
+						<textarea class="form__textarea" placeholder="Напиши свою учебную цель" title="Напиши свою учебную цель"></textarea>
+					</fieldset>
+					
+					<div class="textarea-underline">
+						<span class="error-warning"></span>
+						<span class="chars-counter">0&nbsp;/&nbsp;200</span>
+					</div>
+					
+					<div class="buttons-box">
+						<button class="button button--previous" type="button" title="Назад">
+							Назад
+						</button>
+						<button class="button button--next" type="button" title="Следующий шаг" disabled>
+							Следующий шаг
+						</button>
+					</div>
+				</form>
+			</section>
+		</div>
+	</main>
+
+	
+	<!-- ↓↓↓ SCRIPTS ↓↓↓ -->
+	<script src="js/main.js"></script>
+	<script src="js/select.js"></script>
+</body>
+</html>

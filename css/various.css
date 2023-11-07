@@ -1,0 +1,10 @@
+:root {
+	--blackColor: #343434;	
+	--whiteColor: #ffffff;
+	--grayColor: #9a9a9a; /* placeholders */
+	--blueColor: #3ca9f0;
+	--redColor: #ff395d;
+	--lightGray: #eaeaea; /* lines */
+	--bckgrndGray: #eeeff0; /* bttn bckgrnd */
+	--background: #fdfeff;
+}
